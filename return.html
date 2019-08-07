@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html lang="en-US" class="no-js ie ie6 lte7 lte8 lte9"><![endif]-->
+<!--[if IE 7 ]><html lang="en-US" class="no-js ie ie7 lte7 lte8 lte9"><![endif]-->
+<!--[if IE 8 ]><html lang="en-US" class="no-js ie ie8 lte8 lte9"><![endif]-->
+<!--[if IE 9 ]><html lang="en-US" class="no-js ie ie9 lte9"><![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--><html lang="en-US" class="no-js"><!--<![endif]-->
+	<head>
+    
+    	<meta name="description" content=""/>
+    	<meta name="keywords" content="" />
+    
+		<meta charset="UTF-8" />
+        
+		<title></title>
+             
+		<link rel="stylesheet" href="assets/css/style.css" />
+		<link rel="stylesheet" href="assets/css/halflings.css" />
+        <link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:400,300,700' rel='stylesheet' type='text/css'>
+        
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+		<script type="text/javascript" src="assets/js/modernizr.js"></script>
+		<script type="text/javascript" src="assets/js/accordion-menu.js"></script>
+		<script type="text/javascript" src="assets/js/jquery-ui-personalized-1.5.2.packed.js"></script>
+		<script type="text/javascript" src="assets/js/tabs.js"></script>
+        <script type="text/javascript" src="assets/js/sale.js"></script>
+        
+        <script type="text/javascript">
+  			$(function() {
+    			var select_ticket_status = function(status) {
+      			if (status == 'All') {
+        			$('.ticket').show();
+      			} else {
+        			$('.ticket').not('[data-status="' + status + '"]').hide();
+        			$('.ticket[data-status="' + status + '"]').show();
+      			}
+    			};
+    
+    			$('#status-radios :radio').change(function(event) {
+      			select_ticket_status($(this).val());
+    			});
+    
+    			$('#status-radios :radio:checked').change();
+  			});
+		</script>
+        
+	</head>
+    
+<body>      
+	
+<div class="container">
+    
+	<header role="banner">
+        <a href="#" id="header-logo"></a>
+        	<ul class="switch-nav">
+        		<li><div class="switch-title">Switch Brands:</div></li>
+        		<li class="switch-btn-instaflex"><a href="#"></a></li>
+            	<li class="switch-btn-luminday"><a href="#"></a></li>
+            	<li class="switch-btn-nugenix"><a href="#"></a></li>
+            	<li class="switch-btn-beneflex"><a href="#"></a></li>
+				<li class="switch-btn-logout"><a href="#"></a></li>
+        	</ul>
+    </header>
+        
+	<section id="content" role="main">
+ 
+		<div class="two column alpha">	
+            <div class="profile">          
+            	<div class="profile-icon"></div>
+                	<ul class="profile-meta">
+                		<li><strong>Howdy, Phil Kerrigan!</strong></li>
+                    	<li>Logged in as <strong>Admin...</strong></li>
+                    	<li><a href="#">Account Settings</a></li>
+                	</ul>
+            </div><!--.user-->
+            
+            <div class="input-back">
+                <form method="get" action="/search" id="search">
+  					<input name="q" type="text" size="40" placeholder="Search..." />
+				</form>
+            </div>
+            
+            <hr>
+            <nav id="primary">
+                <ul>
+					<li class="accordion-btn"><a href="/ddllc-crm/order.html"><i class="halflings-icon white list"></i>Orders</a></li>
+                    <li class="accordion-btn"><a href="/ddllc-crm/support.html"><i class="halflings-icon white tag"></i>Support</a></li>
+                    <li class="accordion-btn"><a href="/ddllc-crm/sale.html"><i class="halflings-icon white usd"></i>Sale</a></li>
+                    <li class="accordion-btn"><a href="/ddllc-crm/user.html"><i class="halflings-icon white user"></i>Users</a></li>
+                    <li class="accordion-btn"><a href="/ddllc-crm/return.html"><i class="halflings-icon white repeat"></i>Returns</a></li>
+					<li class="accordion-btn"><a href="#"><span style="font-size:11px; margin-right:4px; position:relative; top:-2px;">&#9660;</span> Reports</a></li>
+                    <li>
+						<ul class="accordion-dropdown">
+							<li class="accordion-dropdown-btn"><div class="nav-icon"></div><a href="#"><i class="halflings-icon white list-alt"></i>Rebills $ Retention</a></li>
+                    		<li class="accordion-dropdown-btn"><a href="#"><i class="halflings-icon white list-alt"></i>Unshipped Rebills</a></li>
+                    		<li class="accordion-dropdown-btn"><a href="#"><i class="halflings-icon white list-alt"></i>MA & NC Sales</a></li>
+                    		<li class="accordion-dropdown-btn"><a href="#"><i class="halflings-icon white list-alt"></i>Daily Sales</a></li>
+                    		<li class="accordion-dropdown-btn"><a href="#"><i class="halflings-icon white list-alt"></i>Summaries</a></li>
+							<li class="accordion-dropdown-btn"><a href="#"><i class="halflings-icon white list-alt"></i>CSR Retention</a></li>
+                    		<li class="accordion-dropdown-btn"><a href="#"><i class="halflings-icon white list-alt"></i>Age Retention</a></li>
+                        </ul>
+                    </li>
+                    <li class="accordion-btn"><a href="#"><i class="halflings-icon white envelope"></i>BIN Settings</a></li>
+				</ul> 
+            </nav>
+        
+        </div><!--.two.column.alpha-->                       
+            
+		<div class="ten column omega">
+			
+            <div class="page-title">Returns</div>
+            	
+                <ul class="tabnav">
+                	<li class="return-tab"><a href="#">Inbox</a></li>
+                    <li class="return-tab"><a href="#">Order Found</a></li>
+                    <li class="return-tab"><a href="#">Order Not Found</a></li>
+                    <li class="return-tab"><a href="#">Dealt With</a></li>
+                    <li class="return-tab"><a href="#">Ignored</a></li>
+                    <li class="return-tab"><a href="#">All</a></li>
+                </ul>
+                <button class="upload-return-sheet-btn">Upload Return Sheet</button>
+                
+                <hr>
+            	<div class="returns-sub-nav">
+                	<ul>
+                    	<li><a href="#">Ignore</a> //</li>
+                        <li><a href="#">Uingnore</a> //</li>
+                        <li><a href="#">Mark as Dealt With</a> //</li>
+                        <li><a href="#">Mark as Not Dealt With</a> //</li>
+                        <li><a href="#">Refresh</a></li>
+                    </ul>
+                </div>
+            	
+            	<div class="pagination-top">1 - 50 of 221 <a href="#">Next ›</a> <a href="#">Last »</a></div>
+
+				<table id="returns-list" data-query="search%5Bbox%5D=inbox" data-limit="50" data-count="147" data-page="1">
+  					<thead>
+    					<tr>
+      						<th><div class="returns-check"><input type="checkbox" value="None" name="check" /><label></label></div></th>
+ 						    <th>Name</th>
+						    <th>Condition</th>
+							<th>Reason</th>
+							<th>Notes</th>
+							<th>Order</th>
+							<th>Date</th>
+						</tr>
+					</thead>
+  
+					<tbody>
+						<tr class="return-row" data-return-id="150897">
+							<td><div class="returns-check"><input type="checkbox" value="None" name="check" /><label></label></div></td>
+        					<td><a href="/ddllc-crm/return123.html">John Doe</a></td>
+                            <td><a href="/ddllc-crm/return123.html">Thrown Away (Seal Broken)</a></td>
+        					<td><a href="/ddllc-crm/return123.html">Tracking #</a></td>
+							<td><a href="/ddllc-crm/return123.html"><span class="return-row-notes">ups#1ZAW664023740/cancel/refund req</span></a></td>
+        					<td><a href="/ddllc-crm/return123.html">3737556</a></td>
+        					<td><a href="/ddllc-crm/return123.html">2013-03-08</a></td>
+      					</tr>
+						<tr class="return-row" data-return-id="150898">
+        					<td><div class="returns-check"><input type="checkbox" /><label></label></div></td>
+                            <td><a href="/ddllc-crm/return123.html">John Doe</a></td>
+                            <td><a href="/ddllc-crm/return123.html">Resalable</a></td>
+                            <td><a href="/ddllc-crm/return123.html">Cust. Pd Postage</a></td>
+                            <td><a href="/ddllc-crm/return123.html"><span class="return-row-notes">cancel/ refund req</span></a></td>
+                            <td><a href="/ddllc-crm/return123.html">31478561</a></td>
+                            <td><a href="/ddllc-crm/return123.html">2013-03-08</a></td>
+                        </tr>
+                        <tr class="return-row" data-return-id="150899">
+                            <td><div class="returns-check"><input type="checkbox" /><label></label></div></td>
+                            <td><a href="/ddllc-crm/return123.html">John Doe</a></td>
+                            <td><a href="/ddllc-crm/return123.html">Resalable</a></td>
+                            <td><a href="/ddllc-crm/return123.html">Cust. Pd Postage</a></td>
+                            <td><a href="/ddllc-crm/return123.html"><span class="return-row-notes"></span></a></td>
+                            <td></td>
+                            <td><a href="/ddllc-crm/return123.html">2013-03-08</a></td>
+                        </tr>
+                        <tr class="return-row" data-return-id="150900">
+                            <td><div class="returns-check"><input type="checkbox" /><label></label></div></td>
+                            <td><a href="/ddllc-crm/return123.html">John Doe</a></td>
+                            <td><a href="/ddllc-crm/return123.html">Resalable</a></td>
+                            <td><a href="/ddllc-crm/return123.html">Refused</a></td>
+                            <td><a href="/ddllc-crm/return123.html"><span class="return-row-notes"></span></a></td>
+                            <td></td>
+                            <td><a href="/ddllc-crm/return123.html">2013-03-08</a></td>
+                        </tr>
+                        <tr class="return-row" data-return-id="150901">
+                            <td><div class="returns-check"><input type="checkbox" /><label></label></div></td>
+                            <td><a href="/ddllc-crm/return123.html">John Doe</a></td>
+                            <td><a href="/ddllc-crm/return123.html">Resalable</a></td>
+                            <td><a href="/ddllc-crm/return123.html">Refused</a></td>
+                            <td><a href="/ddllc-crm/return123.html"><span class="return-row-notes"></span></a></td>
+                            <td></td>
+                            <td><a href="/ddllc-crm/return123.html">2013-03-08</a></td>
+                        </tr>
+                        <tr class="return-row" data-return-id="150902">
+                            <td><div class="returns-check"><input type="checkbox" /><label></label></div></td>
+                            <td><a href="/ddllc-crm/return123.html">John Doe</a></td>
+                            <td><a href="/ddllc-crm/return123.html">Thrown Away (Seal Broken)</a></td>
+                            <td><a href="/ddllc-crm/return123.html">Cust. Pd Postage</a></td>
+                            <td><a href="/ddllc-crm/return123.html"><span class="return-row-notes">cancel/ refund req </span></a></td>
+                            <td></td>
+                            <td><a href="/ddllc-crm/return123.html">2013-03-08</a></td>
+                        </tr>
+                        <tr class="return-row" data-return-id="150903">
+                        	<td><div class="returns-check"><input type="checkbox" /><label></label></div></td>
+                            <td><a href="/ddllc-crm/return123.html">John Doe</a></td>
+                            <td><a href="/ddllc-crm/return123.html">Resalable</a></td>
+                            <td><a href="/ddllc-crm/return123.html">Cust. Pd Postage</a></td>
+                            <td><a href="/ddllc-crm/return123.html"><span class="return-row-notes">cancel/ refund req </span></a></td>
+                            <td></td>
+                            <td><a href="/ddllc-crm/return123.html">2013-03-08</a></td>
+                        </tr>
+                        <tr class="return-row" data-return-id="150904">
+                            <td><div class="returns-check"><input type="checkbox" /><label></label></div></td>
+                            <td><a href="/ddllc-crm/return123.html">John Doe</a></td>
+                            <td><a href="/ddllc-crm/return123.html">Resalable</a></td>
+                            <td><a href="/ddllc-crm/return123.html">Refused</a></td>
+                            <td><a href="/ddllc-crm/return123.html"><span class="return-row-notes"></span></a></td>
+                            <td></td>
+                            <td><a href="/ddllc-crm/return123.html">2013-03-08</a></td>
+                        </tr>
+                        <tr class="return-row" data-return-id="150905">
+                            <td><div class="returns-check"><input type="checkbox" /><label></label></div></td>
+                            <td><a href="/ddllc-crm/return123.html">John Doe</a></td>
+                            <td><a href="/ddllc-crm/return123.html">Resalable</a></td>
+                            <td><a href="/ddllc-crm/return123.html">Refused</a></td>
+                            <td><a href="/ddllc-crm/return123.html"><span class="return-row-notes"></span></a></td>
+                            <td><a href="/ddllc-crm/return123.html">3444489</a></td>
+                            <td><a href="/ddllc-crm/return123.html">2013-03-08</a></td>
+                        </tr>
+                        <tr class="return-row" data-return-id="150906">
+                            <td><div class="returns-check"><input type="checkbox" /><label></label></div></td>
+                            <td><a href="/ddllc-crm/return123.html">John Doe</a></td>
+                            <td><a href="/ddllc-crm/return123.html">Resalable</a></td>
+                            <td><a href="/ddllc-crm/return123.html">Refused</a></td>
+                            <td><a href="/ddllc-crm/return123.html"><span class="return-row-notes"></span></a></td>
+                            <td></td>
+                            <td><a href="/ddllc-crm/return123.html">2013-03-08</a></td>
+                        </tr>
+                        <tr class="return-row" data-return-id="150907">
+                            <td><div class="returns-check"><input type="checkbox" /><label></label></div></td>
+                            <td><a href="/ddllc-crm/return123.html">John Doe</a></td>
+                            <td><a href="/ddllc-crm/return123.html">Resalable</a></td>
+                            <td><a href="/ddllc-crm/return123.html">Refused</a></td>
+                            <td><a href="/ddllc-crm/return123.html"><span class="return-row-notes">cancel/ refund req</span></a></td>
+                            <td></td>
+                            <td><a href="/ddllc-crm/return123.html">2013-03-08</a></td>
+                        </tr>
+                        <tr class="return-row" data-return-id="150908">
+                            <td><div class="returns-check"><input type="checkbox" /><label></label></div></td>
+                            <td><a href="/ddllc-crm/return123.html">John Doe</a></td>
+                            <td><a href="/ddllc-crm/return123.html">Resalable</a></td>
+                            <td><a href="/ddllc-crm/return123.html">Cust. Pd Postage</a></td>
+                            <td><a href="/ddllc-crm/return123.html"><span class="return-row-notes"></span></a></td>
+                            <td><a href="/ddllc-crm/return123.html">3777778</a></td>
+                            <td><a href="/ddllc-crm/return123.html">2013-03-08</a></td>
+                        </tr>
+                        <tr class="return-row" data-return-id="150909">
+                            <td><div class="returns-check"><input type="checkbox" /><label></label></div></td>
+                            <td><a href="/ddllc-crm/return123.html">John Doe</a></td>
+                            <td><a href="/ddllc-crm/return123.html">Resalable</a></td>
+                            <td><a href="/ddllc-crm/return123.html">Refused</a></td>
+                            <td><a href="/ddllc-crm/return123.html"><span class="return-row-notes"></span></a></td>
+                            <td></td>
+                            <td><a href="/ddllc-crm/return123.html">2013-03-08</a></td>
+                        </tr>
+                        <tr class="return-row" data-return-id="150910">
+                            <td><div class="returns-check"><input type="checkbox" /><label></label></div></td>
+                            <td><a href="/ddllc-crm/return123.html">John Doe</a></td>
+                            <td><a href="/ddllc-crm/return123.html">Resalable</a></td>
+                            <td><a href="/ddllc-crm/return123.html">Cust. Pd Postage</a></td>
+                            <td><a href="/ddllc-crm/return123.html"><span class="return-row-notes"></span></a></td>
+                            <td><a href="/ddllc-crm/return123.html">3775555</a></td>
+                            <td><a href="/ddllc-crm/return123.html">2013-03-08</a></td>
+                        </tr>
+                        <tr class="return-row" data-return-id="150911">
+                            <td><div class="returns-check"><input type="checkbox" /><label></label></div></td>
+                            <td><a href="/ddllc-crm/return123.html">John Doe</a></td>
+                            <td><a href="/ddllc-crm/return123.html">Resalable</a></td>
+                            <td><a href="/ddllc-crm/return123.html">Refused</a></td>
+                            <td><a href="/ddllc-crm/return123.html"><span class="return-row-notes"></span></a></td>
+                            <td><a href="/ddllc-crm/return123.html">355555</a></td>
+                            <td><a href="/ddllc-crm/return123.html">2013-03-08</a></td>
+                        </tr>
+                        <tr class="return-row" data-return-id="150912">
+                            <td><div class="returns-check"><input type="checkbox" /><label></label></div></td>
+                            <td><a href="/ddllc-crm/return123.html">John Doe</a></td>
+                            <td><a href="/ddllc-crm/return123.html">Resalable</a></td>
+                            <td><a href="/ddllc-crm/return123.html">Refused</a></td>
+                            <td><a href="/ddllc-crm/return123.html"><span class="return-row-notes"></span></a></td>
+                            <td></td>
+                            <td><a href="/ddllc-crm/return123.html">2013-03-08</a></td>
+                        </tr>
+                        <tr class="return-row" data-return-id="150913">
+                            <td><div class="returns-check"><input type="checkbox" /><label></label></div></td>
+                            <td><a href="/ddllc-crm/return123.html">John Doe</a></td>
+                            <td><a href="/ddllc-crm/return123.html">Resalable</a></td>
+                            <td><a href="/ddllc-crm/return123.html">Refused</a></td>
+                            <td><a href="/ddllc-crm/return123.html"><span class="return-row-notes"></span></a></td>
+                            <td><a href="/ddllc-crm/return123.html">35645571</a></td>
+                            <td><a href="/ddllc-crm/return123.html">2013-03-08</a></td>
+                        </tr>
+                        <tr class="return-row" data-return-id="150914">
+                            <td><div class="returns-check"><input type="checkbox" /><label></label></div></td>
+                            <td><a href="/ddllc-crm/return123.html">John Doe</a></td>
+                            <td><a href="/ddllc-crm/return123.html">Resalable</a></td>
+                            <td><a href="/ddllc-crm/return123.html">Refused</a></td>
+                            <td><a href="/ddllc-crm/return123.html"><span class="return-row-notes"></span></a></td>
+                            <td></td>
+                            <td><a href="/ddllc-crm/return123.html">2013-03-08</a></td>
+                        </tr>
+                        <tr class="return-row" data-return-id="150915">
+                            <td><div class="returns-check"><input type="checkbox" /><label></label></div></td>
+                            <td><a href="/ddllc-crm/return123.html">John Doe</a></td>
+                            <td><a href="/ddllc-crm/return123.html">Resalable</a></td>
+                            <td><a href="/ddllc-crm/return123.html">Tracking #</a></td>
+                            <td><a href="/ddllc-crm/return123.html"><span class="return-row-notes">cert#70120769537/ cancel/ refund req</span></a></td>
+                            <td></td>
+                            <td><a href="/ddllc-crm/return123.html">2013-03-08</a></td>
+                        </tr>
+                        <tr class="return-row" data-return-id="150916">
+                            <td><div class="returns-check"><input type="checkbox" /><label></label></div></td>
+                            <td><a href="/ddllc-crm/return123.html">John Doe</a></td>
+                            <td><a href="/ddllc-crm/return123.html">Resalable</a></td>
+                            <td><a href="/ddllc-crm/return123.html">Refused</a></td>
+                            <td><a href="/ddllc-crm/return123.html"><span class="return-row-notes"></span></a></td>
+                            <td><a href="/ddllc-crm/return123.html">375675672</a></td>
+                            <td><a href="/ddllc-crm/return123.html">2013-03-08</a></td>
+                        </tr>
+                        <tr class="return-row" data-return-id="150917">
+                            <td><div class="returns-check"><input type="checkbox" /><label></label></div></td>
+                            <td><a href="/ddllc-crm/return123.html">John Doe</a></td>
+                            <td><a href="/ddllc-crm/return123.html">Resalable</a></td>
+                            <td><a href="/ddllc-crm/return123.html">Refused</a></td>
+                            <td><a href="/ddllc-crm/return123.html"><span class="return-row-notes"></span></a></td>
+                            <td></td>
+                            <td><a href="/ddllc-crm/return123.html">2013-03-08</a></td>
+                        </tr>
+                        <tr class="return-row" data-return-id="150918">
+                            <td><div class="returns-check"><input type="checkbox" /><label></label></div></td>
+                            <td><a href="/ddllc-crm/return123.html">John Doe</a></td>
+                            <td><a href="/ddllc-crm/return123.html">Thrown Away (Seal Broken</a></td>
+                            <td><a href="/ddllc-crm/return123.html">Cust. Pd Postage</a></td>
+                            <td><a href="/ddllc-crm/return123.html"><span class="return-row-notes"></span></a></td>
+                            <td></td>
+                            <td><a href="/ddllc-crm/return123.html">2013-03-08</a></td>
+                        </tr>
+                        <tr class="return-row" data-return-id="150919">
+                            <td><div class="returns-check"><input type="checkbox" /><label></label></div></td>
+                            <td><a href="/ddllc-crm/return123.html">John Doe</a></td>
+                            <td><a href="/ddllc-crm/return123.html">Resalable</a></td>
+                            <td><a href="/ddllc-crm/return123.html">Cust. Pd Postage</a></td>
+                            <td><a href="/ddllc-crm/return123.html"><span class="return-row-notes"></span></a></td>
+                            <td><a href="/ddllc-crm/return123.html">4564565</a></td>
+                            <td><a href="/ddllc-crm/return123.html">2013-03-08</a></td>
+                        </tr>
+                        <tr class="return-row" data-return-id="150920">
+                            <td><div class="returns-check"><input type="checkbox" /><label></label></div></td>
+                            <td><a href="/ddllc-crm/return123.html">John Doe</a></td>
+                            <td><a href="/ddllc-crm/return123.html">Resalable</a></td>
+                            <td><a href="/ddllc-crm/return123.html">Cust. Pd Postage</a></td>
+                            <td><a href="/ddllc-crm/return123.html"><span class="return-row-notes">cancel/ refund req</span></a></td>
+                            <td><a href="/ddllc-crm/return123.html">3745722</a></td>
+                            <td><a href="/ddllc-crm/return123.html">2013-03-08</a></td>
+                        </tr>
+                        <tr class="return-row" data-return-id="150921">
+                            <td><div class="returns-check"><input type="checkbox" /><label></label></div></td>       
+                            <td><a href="/ddllc-crm/return123.html">John Doe</a></td>
+                            <td><a href="/ddllc-crm/return123.html">Resalable</a></td>
+                            <td><a href="/ddllc-crm/return123.html">Cust. Pd Postage</a></td>
+                            <td><a href="/ddllc-crm/return123.html"><span class="return-row-notes"></span></a></td>
+                            <td><a href="/ddllc-crm/return123.html">1235991</a></td>
+                            <td><a href="/ddllc-crm/return123.html">2013-03-08</a></td>
+                        </tr>
+                        <tr class="return-row" data-return-id="150922">
+                            <td><div class="returns-check"><input type="checkbox" /><label></label></div></td>
+                            <td><a href="/ddllc-crm/return123.html">John Doe</a></td>
+                            <td><a href="/ddllc-crm/return123.html">Resalable</a></td>
+                            <td><a href="/ddllc-crm/return123.html">Cust. Pd Postage</a></td>
+                            <td><a href="/ddllc-crm/return123.html"><span class="return-row-notes"></span></a></td>
+                            <td></td>
+                            <td><a href="/ddllc-crm/return123.html">2013-03-08</a></td>
+                        </tr>
+                        <tr class="return-row" data-return-id="150923">
+                            <td><div class="returns-check"><input type="checkbox" /><label></label></div></td>
+                            <td><a href="/ddllc-crm/return123.html">John Doe</a></td>
+                            <td><a href="/ddllc-crm/return123.html">Resalable</a></td>
+                            <td><a href="/ddllc-crm/return123.html">Cust. Pd Postage</a></td>
+                            <td><a href="/ddllc-crm/return123.html"><span class="return-row-notes"></span></a></td>
+                            <td><a href="/ddllc-crm/return123.html">4565637</a></td>
+                            <td><a href="/ddllc-crm/return123.html">2013-03-08</a></td>
+                        </tr>
+                        <tr class="return-row" data-return-id="150924">
+                            <td><div class="returns-check"><input type="checkbox" /><label></label></div></td>
+                            <td><a href="/ddllc-crm/return123.html">John Doe</a></td>
+                            <td><a href="/ddllc-crm/return123.html">Resalable</a></td>
+                            <td><a href="/ddllc-crm/return123.html">Refused</a></td>
+                            <td><a href="/ddllc-crm/return123.html"><span class="return-row-notes"></span></a></td>
+                            <td></td>
+                            <td><a href="/ddllc-crm/return123.html">2013-03-08</a></td>
+                       </tr>
+					</tbody>
+				</table>
+                
+                <div class="pagination-bottom">1 - 50 of 221 <a href="#">Next ›</a> <a href="#">Last »</a></div>
+            
+        </div><!--.ten.column.omega-->
+            
+    </section><!-- #main -->                      
+
+	<div class="push"></div>
+
+</div><!-- .container -->
+        
+	<footer role="contentinfo">
+    
+	</footer><!-- footer -->
+    
+</body>
+
+</html>
