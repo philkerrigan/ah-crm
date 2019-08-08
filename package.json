@@ -1,0 +1,34 @@
+{
+  "name": "ah-crm",
+  "version": "1.0.0",
+  "description": "",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/philkerrigan/ah-crm.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/philkerrigan/ah-crm/issues"
+  },
+  "homepage": "https://github.com/philkerrigan/ah-crm#readme",
+  "dependencies": {
+    "gulp": "^4.0.2",
+    "webpack-dev-server": "^3.7.2"
+  },
+  "devDependencies": {
+    "autoprefixer": "^9.6.1",
+    "concat": "^1.0.3",
+    "cssnano": "^4.1.10",
+    "gulp-concat": "^2.6.1",
+    "gulp-postcss": "^8.0.0",
+    "gulp-replace": "^1.0.0",
+    "gulp-sass": "^4.0.2",
+    "gulp-sourcemaps": "^2.6.5",
+    "gulp-uglify": "^3.0.2"
+  }
+}
