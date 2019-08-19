@@ -14,16 +14,11 @@
 
 		<title></title>
 
-		<link rel="stylesheet" href="assets/css/style.css" />
-		<link rel="stylesheet" href="assets/css/halflings.css" />
+		<link rel="stylesheet" href="dist/css/all.css" />
         <link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:400,300,700' rel='stylesheet' type='text/css'>
 
 		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
-		<script type="text/javascript" src="assets/js/modernizr.js"></script>
-		<script type="text/javascript" src="assets/js/accordion-menu.js"></script>
-		<script type="text/javascript" src="assets/js/jquery-ui-personalized-1.5.2.packed.js"></script>
-		<script type="text/javascript" src="assets/js/tabs.js"></script>
-
+		<script type="text/javascript" src="dist/js/all.js"></script>
         <script type="text/javascript">
   			$(function() {
     			var select_ticket_status = function(status) {
@@ -51,12 +46,12 @@
 
 	<header role="banner">
         <a href="#" id="header-logo"></a>
-        	<ul class="switch-nav">
-        		<li><div class="switch-title">Switch Brands:</div></li>
-        		<li class="switch-btn-instaflex"><a href="#"></a></li>
-            	<li class="switch-btn-luminday"><a href="#"></a></li>
-            	<li class="switch-btn-nugenix"><a href="#"></a></li>
-            	<li class="switch-btn-beneflex"><a href="#"></a></li>
-				<li class="switch-btn-logout"><a href="#"></a></li>
-        	</ul>
+    	<ul class="switch-nav">
+    		<li><div class="switch-title text roboto">Switch Brands:</div></li>
+    		<li class="switch-btn-instaflex"><a href="#"></a></li>
+        	<li class="switch-btn-luminday"><a href="#"></a></li>
+        	<li class="switch-btn-nugenix"><a href="#"></a></li>
+        	<li class="switch-btn-beneflex"><a href="#"></a></li>
+			<li class="switch-btn-logout"><a href="#"></a></li>
+    	</ul>
     </header>
