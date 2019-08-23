@@ -9,6 +9,7 @@
 
     	<meta name="description" content=""/>
     	<meta name="keywords" content="" />
+		<meta name="viewport" content="initial-scale=1, maximum-scale=1" />
 
 		<meta charset="UTF-8" />
 
@@ -45,7 +46,9 @@
 <div class="container">
 
 	<header role="banner">
-        <a href="#" id="header-logo"></a>
+        <a href="#" class="header-logo">
+        	<img src="/ah-crm/dist/images/ah-logo.png" alt="">
+        </a>
     	<ul class="switch-nav">
     		<li><div class="switch-title text roboto">Switch Brands:</div></li>
     		<li class="switch-btn-instaflex"><a href="#"></a></li>
