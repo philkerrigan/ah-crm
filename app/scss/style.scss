@@ -526,8 +526,7 @@ header[role=banner] {
     		width: 28px;
             background: url("../images/brand-icons.png") no-repeat;
             &.instaflex {
-                background-image: url("../images/brand-icons.png") 0px 8px no-repeat;
-                margin: 100px;
+                background-position: 0px 8px;
             }
             &.luminday {
                 background-position: -30px 8px;
