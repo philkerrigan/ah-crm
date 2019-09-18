@@ -46,15 +46,16 @@
 <div class="container">
 
 	<header role="banner">
-        <a href="#" class="header-logo">
+        <a href="index.php" class="header-logo">
         	<img src="/ah-crm/dist/images/ah-logo.png" alt="">
         </a>
     	<ul class="switch-nav">
-    		<li><div class="switch-title text roboto">Switch Brands:</div></li>
-    		<li class="switch-btn-instaflex"><a href="#"></a></li>
-        	<li class="switch-btn-luminday"><a href="#"></a></li>
-        	<li class="switch-btn-nugenix"><a href="#"></a></li>
-        	<li class="switch-btn-beneflex"><a href="#"></a></li>
-			<li class="switch-btn-logout"><a href="#"></a></li>
+    		<li class="instaflex">
+				<a href="#"></a>
+			</li>
+        	<li class="luminday"><a href="#"></a></li>
+        	<li class="nugenix"><a href="#"></a></li>
+        	<li class="beneflex"><a href="#"></a></li>
+			<li class="logout"><a href="#"></a></li>
     	</ul>
     </header>

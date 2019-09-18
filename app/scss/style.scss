@@ -504,99 +504,50 @@ table.tablesorter input[type=checkbox] {
 	opacity: 1;
 }
 
-// Login Page
-.login-logo {
-	background: url("../images/login-logo.png") no-repeat;
-	height: 150px;
-	width: 432px;
-	margin: 0 auto;
-	position: relative;
-	top: -80px;
-}
-.login-background-image {
-	background: url("../images/login-back.png") #ececec center -100px no-repeat;
-}
-#login-form .input-back {
-	margin-bottom: 10px;
-	height: 62px;
-	width: 328px;
-	background-color: rgba(0, 0, 0, 0.125);
-}
-#password,
-#user_name {
-	width: 320px;
-	height: 54px;
-	padding: 10px;
-	margin: 4px 1.5%;
-	background-color: rgba(255, 255, 255, 0.85);
-}
-.login-btn {
-	width: 160px;
-}
-.forgot {
-	font-size: 12px;
-}
-.login-back {
-	background-color: rgba(0, 0, 0, 0.125);
-	border-radius: 4px;
-	width: 380px;
-	margin: 0 auto;
-	padding: 40px 0 30px 50px;
-	position: relative;
-	top: -20px;
-}
-
 // Header
 header[role=banner] {
 	width: 100%;
-	background-color: #555555;
+	background-color: #000;
 	padding:20px;
     overflow: hidden;
     .header-logo {
     	display: block;
     	margin: 0;
     }
+    .switch-nav {
+    	float: right;
+    	margin: 10px 0 0;
+    	li,
+    	a {
+    		display: inline-block;
+    	}
+    	li {
+    		height: 36px;
+    		width: 28px;
+            background: url("../images/brand-icons.png") no-repeat;
+            &.instaflex {
+                background-image: url("../images/brand-icons.png") 0px 8px no-repeat;
+                margin: 100px;
+            }
+            &.luminday {
+                background-position: -30px 8px;
+            }
+            // &.nugenix {
+            //     background: url("../images/brand-icons.png") -60px 8px no-repeat;
+            // }
+            // &.beneflex {
+            //     background: url("../images/brand-icons.png") -90px 8px no-repeat;
+            // }
+            // &.logout {
+            //     background: url("../images/brand-icons.png") -120px 8px no-repeat;
+            // }
+    	}
+    }
 }
 
 
 
-.switch-nav {
-	float: right;
-	margin: 10px 0 0;
-	li,
-	a {
-		display: inline-block;
-	}
-	.switch-title {
-		font-weight: 400;
-		font-size: 14px;
-		color: #fff;
-		padding: 0 10px 0 0;
-	}
-	.switch-btn-instaflex,
-	.switch-btn-luminday,
-	.switch-btn-nugenix,
-	.switch-btn-beneflex,
-	.switch-btn-logout {
-		height: 36px;
-		width: 28px;
-	}
-	.switch-btn-instaflex {
-		background: url("../images/brand-icons.png") 0 8px no-repeat;
-	}
-	.switch-btn-luminday {
-		background: url("../images/brand-icons.png") -30px 8px no-repeat;
-	}
-	.switch-btn-nugenix {
-		background: url("../images/brand-icons.png") -60px 8px no-repeat;
-	}
-	.switch-btn-beneflex {
-		background: url("../images/brand-icons.png") -90px 8px no-repeat;
-	}
-	.switch-btn-logout {
-		background: url("../images/brand-icons.png") -120px 8px no-repeat;
-	}
-}
+
 
 /* ==================== Content Area Styles ==================== */
 .page-title {

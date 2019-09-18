@@ -5,17 +5,17 @@
 
 <section id="content" role="main">
 
-	<div class="login-logo"></div>
-
 	<div class="login-back">
-        <form id="login-form" class="span-36 first last" method="post" action="order.php">
-            <div class="input-back"><input id="user_name" type="text" name="user_name" value="Username" autofocus /></div>
-            <div class="input-back"><input id="password" type="text" name="password" value="Password" /></div>
+        <form id="login-form" method="post" action="order.php">
+            <input id="user_name" type="text" name="user_name" value="Username" autofocus />
+            <input id="password" type="text" name="password" value="Password" />
             <input class="positive login-btn" type="submit" value="LOG IN" />
-            <div class="forgot">Forgot User Name? | Forgot Password?</div>
+            <p class="forgot">
+                Forgot User Name? | Forgot Password?
+            </p>
         </form>
-	</div><!--.login-back-->
+	</div>
 
-</section><!-- #main -->
+</section>
 
 <?php include('footer.php')?>
