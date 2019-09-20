@@ -504,45 +504,7 @@ table.tablesorter input[type=checkbox] {
 	opacity: 1;
 }
 
-// Header
-header[role=banner] {
-	width: 100%;
-	background-color: #000;
-	padding:20px;
-    overflow: hidden;
-    .header-logo {
-    	display: block;
-    	margin: 0;
-    }
-    .switch-nav {
-    	float: right;
-    	margin: 10px 0 0;
-    	li,
-    	a {
-    		display: inline-block;
-    	}
-    	li {
-    		height: 36px;
-    		width: 28px;
-            background: url("../images/brand-icons.png") no-repeat;
-            &.instaflex {
-                background-position: 0px 8px;
-            }
-            &.luminday {
-                background-position: -30px 8px;
-            }
-            // &.nugenix {
-            //     background: url("../images/brand-icons.png") -60px 8px no-repeat;
-            // }
-            // &.beneflex {
-            //     background: url("../images/brand-icons.png") -90px 8px no-repeat;
-            // }
-            // &.logout {
-            //     background: url("../images/brand-icons.png") -120px 8px no-repeat;
-            // }
-    	}
-    }
-}
+
 
 
 
@@ -1576,10 +1538,6 @@ table.tablesorter .user-check {
 }
 
 
-
-
-/* ==================== Footer ==================== */
-	footer[role=contentinfo] { background-color:#fff; height:10px; }
 
 
 

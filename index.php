@@ -5,7 +5,7 @@
 
 <section id="content" role="main">
 
-	<div class="login-back">
+	<div class="login">
         <form id="login-form" method="post" action="order.php">
             <input id="user_name" type="text" name="user_name" value="Username" autofocus />
             <input id="password" type="text" name="password" value="Password" />

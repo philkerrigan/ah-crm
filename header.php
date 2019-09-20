@@ -50,9 +50,7 @@
         	<img src="/ah-crm/dist/images/ah-logo.png" alt="">
         </a>
     	<ul class="switch-nav">
-    		<li class="instaflex">
-				<a href="#"></a>
-			</li>
+    		<li class="instaflex"><a href="#"></a></li>
         	<li class="luminday"><a href="#"></a></li>
         	<li class="nugenix"><a href="#"></a></li>
         	<li class="beneflex"><a href="#"></a></li>

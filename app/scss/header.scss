@@ -1,0 +1,38 @@
+// Header
+header[role=banner] {
+	width: 100%;
+	background-color: #000;
+	padding: 20px;
+    overflow: hidden;
+    .header-logo {
+    	margin: 0;
+    }
+    .switch-nav {
+    	float: right;
+    	margin: 10px 0 0;
+    	li,
+    	a {
+    		display: inline-block;
+            height: 36px;
+            width: 28px;
+    	}
+    	li {
+            background: url("../images/brand-icons.png") no-repeat;
+            &.instaflex {
+                background-position: 0px 8px;
+            }
+            &.luminday {
+                background-position: -30px 8px;
+            }
+            &.nugenix {
+                background-position: -60px 8px;
+            }
+            &.beneflex {
+                background-position: -90px 8px;
+            }
+            &.logout {
+                background-position: -120px 8px;
+            }
+    	}
+    }
+}
