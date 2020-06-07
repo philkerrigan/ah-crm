@@ -18,17 +18,20 @@
   "homepage": "https://github.com/philkerrigan/ah-crm#readme",
   "dependencies": {
     "gulp": "^4.0.2",
-    "webpack-dev-server": "^3.8.0"
+    "kind-of": "^6.0.3",
+    "webpack": "^4.43.0",
+    "webpack-dev-server": "^3.11.0"
   },
   "devDependencies": {
-    "autoprefixer": "^9.6.1",
+    "autoprefixer": "^9.8.0",
     "concat": "^1.0.3",
     "cssnano": "^4.1.10",
     "gulp-concat": "^2.6.1",
     "gulp-postcss": "^8.0.0",
     "gulp-replace": "^1.0.0",
-    "gulp-sass": "^4.0.2",
+    "gulp-sass": "^4.1.0",
     "gulp-sourcemaps": "^2.6.5",
-    "gulp-uglify": "^3.0.2"
+    "gulp-uglify": "^3.0.2",
+    "minimist": "^1.2.5"
   }
 }
