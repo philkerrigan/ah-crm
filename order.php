@@ -21,9 +21,8 @@
             	<li><a href="#credit-card">Search by Credit Card Data</a></li>
         	</ul>
 
-        	<div id="customer-info" class="tabdiv">
+        	<div id="customer-info">
 
-            	<hr>
                 <div class="page-subtitle">Search by Customer Info</div>
 
 				<div class="four column alpha">
@@ -37,86 +36,10 @@
   					<option value="">Any</option>
   						<optgroup data-country="US" label="States">
               				<option value="AL">Alabama</option>
-              				<option value="AK">Alaska</option>
-              				<option value="AS">American Samoa</option>
-             				<option value="AZ">Arizona</option>
-              				<option value="AR">Arkansas</option>
-              				<option value="CA">California</option>
-              				<option value="CO">Colorado</option>
-              				<option value="CT">Connecticut</option>
-              				<option value="DE">Delaware</option>
-              				<option value="DC">District Of Columbia</option>
-              				<option value="FM">Federated States Of Micronesia</option>
-              				<option value="FL">Florida</option>
-              				<option value="GA">Georgia</option>
-             				<option value="GU">Guam</option>
-             				<option value="HI">Hawaii</option>
-             				<option value="ID">Idaho</option>
-              				<option value="IL">Illinois</option>
-              				<option value="IN">Indiana</option>
-              				<option value="IA">Iowa</option>
-              				<option value="KS">Kansas</option>
-              				<option value="KY">Kentucky</option>
-              				<option value="LA">Louisiana</option>
-              				<option value="ME">Maine</option>
-              				<option value="MH">Marshall Islands</option>
-              				<option value="MD">Maryland</option>
-              				<option value="MA">Massachusetts</option>
-             			 	<option value="MI">Michigan</option>
-              				<option value="MN">Minnesota</option>
-              				<option value="MS">Mississippi</option>
-              				<option value="MO">Missouri</option>
-              				<option value="MT">Montana</option>
-             				<option value="NE">Nebraska</option>
-              				<option value="NV">Nevada</option>
-              				<option value="NH">New Hampshire</option>
-              				<option value="NJ">New Jersey</option>
-              				<option value="NM">New Mexico</option>
-              				<option value="NY">New York</option>
-              				<option value="NC">North Carolina</option>
-              				<option value="ND">North Dakota</option>
-              				<option value="MP">Northern Mariana Islands</option>
-              				<option value="OH">Ohio</option>
-              				<option value="OK">Oklahoma</option>
-              				<option value="OR">Oregon</option>
-              				<option value="PW">Palau</option>
-              				<option value="PA">Pennsylvania</option>
-              				<option value="PR">Puerto Rico</option>
-              				<option value="RI">Rhode Island</option>
-              				<option value="SC">South Carolina</option>
-              				<option value="SD">South Dakota</option>
-              				<option value="TN">Tennessee</option>
-              				<option value="TX">Texas</option>
-              				<option value="UT">Utah</option>
-              				<option value="VT">Vermont</option>
-              				<option value="VI">Virgin Islands</option>
-              				<option value="VA">Virginia</option>
-              				<option value="WA">Washington</option>
-              				<option value="WV">West Virginia</option>
-              				<option value="WI">Wisconsin</option>
-              				<option value="WY">Wyoming</option>
-              				<option value="AA">Armed Forces America</option>
-              				<option value="AE">Armed Forces Africa</option>
-              				<option value="AE">Armed Forces Canada</option>
-              				<option value="AE">Armed Forces Europe</option>
-              				<option value="AE">Armed Forces Middle East</option>
-              				<option value="AP">Armed Forces Pacific</option>
           				</optgroup>
 
   						<optgroup data-country="CA" label="Provinces">
               				<option value="AB">Alberta</option>
-              				<option value="BC">British Columbia</option>
-              				<option value="MB">Manitoba</option>
-              				<option value="NB">New Brunswick</option>
-              				<option value="NL">Newfoundland and Labrador</option>
-             				<option value="NS">Nova Scotia</option>
-              				<option value="ON">Ontario</option>
-              				<option value="PE">Prince Edward Island</option>
-              				<option value="QC">Quebec</option>
-              				<option value="SK">Saskatchewan</option>
-              				<option value="NT">Northwest Territories</option>
-              				<option value="YT">Yukon</option>
-              				<option value="NU">Nunavut</option>
           				</optgroup>
 					</select>
 
@@ -148,9 +71,8 @@
 
         	</div><!--#customer-info-->
 
-        	<div id="order-details" class="tabdiv">
+        	<div id="order-details">
 
-            	<hr>
                 <div class="page-subtitle">Search by Order Details</div>
 
 				<div class="four column alpha">
@@ -189,7 +111,6 @@
 
        		<div id="credit-card" class="tabdiv">
 
-            	<hr>
                 <div class="page-subtitle">Search by Credit Card Data</div>
 
 				<div class="four column alpha">

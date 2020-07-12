@@ -571,20 +571,18 @@ nav#primary ul li {
 	font-size: 14px;
 	color: #fff;
 	text-shadow: 1px 1px 1px #000;
-	box-sizing: border-box;
+
 	float: left;
 	cursor: pointer;
 }
 
 nav#primary .accordion-btn:first-child {
-	-webkit-border-radius: 3px 3px 0 0;
-	-moz-border-radius: 3px 3px 0 0;
+
 	border-radius: 3px 3px 0 0;
 }
 
 nav#primary .accordion-btn:last-child {
-	-webkit-border-radius: 0 0 3px 3px;
-	-moz-border-radius: 0 0 3px 3px;
+
 	border-radius: 0 0 3px 3px;
 	border: none;
 }
@@ -608,14 +606,9 @@ nav#primary .accordion-btn:last-child {
 }
 /* ==================== Tabs ==================== */
 .tabnav {
-	webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
-	box-sizing: border-box;
-	background-color: #d4d4d4;
-	height: 56px;
+
+background-color: aqua;
 	width: 100%;
-	-webkit-border-radius: 3px;
-	-moz-border-radius: 3px;
 	border-radius: 3px;
 }
 
@@ -633,8 +626,6 @@ nav#primary .accordion-btn:last-child {
 	font-size: 14px;
 	background-color: #bebebe;
 	padding: 10px;
-	-webkit-border-radius: 2px 2px 0 0;
-	-moz-border-radius: 2px 2px 0 0;
 	border-radius: 2px 2px 0 0;
 	display: inline-block;
 }
@@ -680,7 +671,7 @@ nav#primary .accordion-btn:last-child {
 /* ==================== Order Page Fields ==================== */
 #customer-info-search-country-select,
 #customer-info-search-zip-code-textfield {
-	width: 48.42105263157895%;
+	// width: 48.42105263157895%;
 }
 
 #customer-info-search-country-select {
@@ -688,16 +679,13 @@ nav#primary .accordion-btn:last-child {
 }
 /* ==================== Search Customer Button Area ==================== */
 .search-customer {
-	webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
-	box-sizing: border-box;
+
 	padding: 22px 10px 58px;
 	border: 1px solid #d4d4d4;
 	background-color: #d4d4d4;
 	height: 56px;
 	width: 100%;
-	-webkit-border-radius: 2px;
-	-moz-border-radius: 2px;
+
 	border-radius: 2px;
 }
 
@@ -761,9 +749,6 @@ nav#primary .accordion-btn:last-child {
 	box-sizing: border-box;
 }
 
-.column.twelve.information {
-	margin-bottom: 0;
-}
 /* ==================== Secondary Nav ==================== */
 nav#secondary {
 	position: relative;
@@ -790,12 +775,9 @@ nav#secondary .accordion-btn:nth-child(4) {
 /* ==================== Customer / Payment Info Tab ==================== */
 #customer-and-payment-info .ticket {
 	padding: 10px 20px;
-	-webkit-border-radius: 2px;
-	-moz-border-radius: 2px;
+
 	border-radius: 2px;
-	webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
-	box-sizing: border-box;
+
 }
 
 #customer-and-payment-info #customer-table {
@@ -862,14 +844,9 @@ nav#secondary .accordion-btn:nth-child(4) {
 /* ==================== Order Details Tab ==================== */
 #order-details .ticket {
 	padding: 10px 20px;
-	-webkit-border-radius: 2px;
-	-moz-border-radius: 2px;
+
 	border-radius: 2px;
-	webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
-	box-sizing: border-box;
-	-webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.75);
-	-moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.75);
+
 	box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.75);
 }
 
@@ -887,7 +864,7 @@ nav#secondary .accordion-btn:nth-child(4) {
 	position: relative;
 	top: 8px;
 	cursor: pointer;
-	font-size: 11px;
+
 }
 
 .cancel-button,
@@ -898,16 +875,9 @@ nav#secondary .accordion-btn:nth-child(4) {
 	margin-top: 4px;
 }
 
-#order-details {
-	font-size: 12px;
-}
 
-#order-details .alpha,
-#order-details .omega {
-	webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
-	box-sizing: border-box;
-}
+
+
 
 #order-details dt {
 	font-weight: 600;
@@ -1358,6 +1328,8 @@ table.tablesorter .user-check {
 }
 /* ==================== Returns Page ==================== */
 /* ==================== Returns Nav ==================== */
+
+
 #select-return-sheets {
 	width: 140px;
 	margin-right: 6px;
