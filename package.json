@@ -17,13 +17,14 @@
   },
   "homepage": "https://github.com/philkerrigan/ah-crm#readme",
   "dependencies": {
+    "bootstrap-icons": "^1.0.0-alpha5",
     "gulp": "^4.0.2",
     "kind-of": "^6.0.3",
-    "webpack": "^4.43.0",
+    "webpack": "^4.44.1",
     "webpack-dev-server": "^3.11.0"
   },
   "devDependencies": {
-    "autoprefixer": "^9.8.5",
+    "autoprefixer": "^9.8.6",
     "concat": "^1.0.3",
     "cssnano": "^4.1.10",
     "gulp-concat": "^2.6.1",

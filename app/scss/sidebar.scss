@@ -1,0 +1,60 @@
+.sidebar {
+	display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    height: 100%;
+    z-index: 100;
+    min-height: 100vh;
+    position: relative;
+}
+
+nav#primary ul li {
+	margin: 0;
+	padding: 0;
+}
+
+.accordion-btn a,
+.accordion-dropdown-btn a {
+	color: #fff;
+	display: block;
+	padding: 10px;
+}
+
+.accordion-btn,
+.accordion-dropdown-btn {
+
+	width: 100%;
+
+	font-family: 'Roboto', sans-serif;
+	font-weight: 300;
+
+	color: #fff;
+
+
+	float: left;
+	cursor: pointer;
+}
+
+nav#primary .accordion-btn:first-child {
+
+
+}
+
+
+.accordion-dropdown {
+	float: left;
+	width: 98%;
+	margin: 0 0 0 2%;
+}
+
+.accordion-dropdown-btn {
+	background-color: #1a1a1a;
+}
+
+.on {
+	background: #3a3a3a;
+}
+
+.over {
+	background: #3a3a3a;
+}

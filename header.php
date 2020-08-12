@@ -1,59 +1,32 @@
-<!DOCTYPE html>
-<!--[if lt IE 7 ]><html lang="en-US" class="no-js ie ie6 lte7 lte8 lte9"><![endif]-->
-<!--[if IE 7 ]><html lang="en-US" class="no-js ie ie7 lte7 lte8 lte9"><![endif]-->
-<!--[if IE 8 ]><html lang="en-US" class="no-js ie ie8 lte8 lte9"><![endif]-->
-<!--[if IE 9 ]><html lang="en-US" class="no-js ie ie9 lte9"><![endif]-->
-<!--[if (gt IE 9)|!(IE)]><!--><html lang="en-US" class="no-js"><!--<![endif]-->
+<!doctype html>
 
-	<head>
+<html lang="en">
+  <head>
 
-    	<meta name="description" content=""/>
-    	<meta name="keywords" content="" />
-		<meta name="viewport" content="initial-scale=1, maximum-scale=1" />
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-		<meta charset="UTF-8" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+	<link rel="stylesheet" href="dist/css/all.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 
-		<title></title>
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+	<script type="text/javascript" src="dist/js/all.js"></script>
 
-		<link rel="stylesheet" href="dist/css/all.css" />
-        <link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:400,300,700' rel='stylesheet' type='text/css'>
-
-		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
-		<script type="text/javascript" src="dist/js/all.js"></script>
-        <script type="text/javascript">
-  			$(function() {
-    			var select_ticket_status = function(status) {
-      			if (status == 'All') {
-        			$('.ticket').show();
-      			} else {
-        			$('.ticket').not('[data-status="' + status + '"]').hide();
-        			$('.ticket[data-status="' + status + '"]').show();
-      			}
-    			};
-
-    			$('#status-radios :radio').change(function(event) {
-      			select_ticket_status($(this).val());
-    			});
-
-    			$('#status-radios :radio:checked').change();
-  			});
-		</script>
-
-	</head>
+</head>
 
 <body>
 
-<div class="container">
+<div class="container-fluid">
 
-	<header role="banner">
-        <a href="index.php" class="header-logo">
-        	<img src="/ah-crm/dist/images/ah-logo.png" alt="">
-        </a>
-    	<ul class="switch-nav">
-    		<li class="instaflex"><a href="#"></a></li>
-        	<li class="luminday"><a href="#"></a></li>
-        	<li class="nugenix"><a href="#"></a></li>
-        	<li class="beneflex"><a href="#"></a></li>
-			<li class="logout"><a href="#"></a></li>
-    	</ul>
-    </header>
+    <header role="banner">
+
+
+            <ul class="profile-meta">
+                <li><strong>Howdy, Phil Kerrigan!</strong></li>
+                <li>Logged in as <strong>Admin...</strong></li>
+                <li><a href="#">Account Settings</a></li>
+            </ul>
+
+    </header
