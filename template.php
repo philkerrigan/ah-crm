@@ -6,12 +6,12 @@
 
 
 
-
+<?php include('sidebar.php')?>
 
 
 <section id="content" role="main">
 
-<?php include('sidebar.php')?>
+fdgdfgdfg
 
 </section>
 

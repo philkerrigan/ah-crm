@@ -23,6 +23,11 @@
 
     <header role="banner">
 
+        <button class="nav-btn">
+            menu
+        </button>
+
+
         <ul class="profile-meta">
             <li><strong>Howdy, Phil Kerrigan!</strong></li>
             <li>Logged in as <strong>Admin...</strong></li>

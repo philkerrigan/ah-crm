@@ -106,6 +106,10 @@ textarea {
 
 
 
+// Resets / Global
+* {
+    box-sizing: border-box;
+}
 
 // Body Structure
 body,
@@ -356,6 +360,7 @@ button {
 // Header
 header[role=banner] {
 	width: 100%;
+    color: #fff;
 	background-color: #242b32;
     overflow: hidden;
 	position: fixed;
@@ -375,13 +380,19 @@ aside {
 	right: 0;
 	z-index: 999;
 	width: 260px;
+    transition: 0.5s;
+}
+@media screen and (max-width: 748px) {
+	aside {
+        left: -260px;
+	}
 }
 
 // Footer
 footer[role=contentinfo] {
-    // background-color: #242b32;
+
     position: relative;
-    background-color: green;
+    background-color: #242b32 !important;
     height: 100px;
 }
 

@@ -1,23 +1,25 @@
-.sidebar {
-	display: flex;
-    flex-direction: column;
-    overflow: hidden;
-    height: 100%;
-    z-index: 100;
-    min-height: 100vh;
-    position: relative;
-}
+aside {
 
-nav#primary {
-	ul {
-		li {
-			a {
-				color: #fff !important;
+	.logo {
+		margin-bottom: 40px;
+		img {
+			width: 100%;
+		}
+	}
+	#primary {
+		ul {
+			padding-left: 20px;
+			li {
+				list-style: none;
+				i,
+				a {
+					color: #fff !important;
+				}
+				i {
+					opacity: .25;
+					width: 60px;
+				}
 			}
 		}
 	}
-}
-
-.poop {
-	margin-top: 10px; 
 }
